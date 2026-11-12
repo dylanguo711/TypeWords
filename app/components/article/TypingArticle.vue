@@ -6,7 +6,6 @@ import QuestionForm from './QuestionForm.vue'
 import Space from './Space.vue'
 import TypingWord from './TypingWord.vue'
 import ClickableEnglishText from '@/components/word/ClickableEnglishText.vue'
-import WordLookupPopover from '@/components/word/WordLookupPopover.vue'
 import { lookupWord } from '@/core/hooks/useWordLookup.ts'
 import { useBaseStore } from '@/core/stores/base'
 import { usePracticeStore } from '@/core/stores/practice'
@@ -921,7 +920,6 @@ const currentPractice = inject('currentPractice', [])
         <QuestionForm :questions="article?.questions" :duration="300" :immediateFeedback="false" :randomize="true" />
       </div>
     </template>
-    <WordLookupPopover />
   </div>
 </template>
 

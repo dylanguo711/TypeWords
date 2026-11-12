@@ -816,5 +816,5 @@ export function normalizeWord(word: string) {
 }
 
 export function goYoudao(word: string) {
-  window.open(`https://www.youdao.com/result?word=${word}&lang=en`, '_blank')
+  window.open(`https://dict.youdao.com/result?word=${encodeURIComponent(word)}&lang=en`, '_blank', 'noopener,noreferrer')
 }

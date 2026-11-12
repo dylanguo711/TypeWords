@@ -32,7 +32,6 @@ import { getPracticeArticleCacheLocal } from '@/core/utils/cache.ts'
 import { genArticleSectionData, usePlayArticleTextAudio, usePlaySentenceAudio } from '@/core/hooks/article.ts'
 import ClickableEnglishText from '@/components/word/ClickableEnglishText.vue'
 import ClickableWord from '@/components/word/ClickableWord.vue'
-import WordLookupPopover from '@/components/word/WordLookupPopover.vue'
 import TypingSentence from '~/components/practice-sentences/TypingSentence.vue'
 
 const { t } = useI18n()
@@ -583,7 +582,6 @@ function play(sentence: Sentence, onEnd: () => void) {
       </div>
     </div>
   </div>
-  <WordLookupPopover />
 </template>
 
 <style scoped lang="scss">

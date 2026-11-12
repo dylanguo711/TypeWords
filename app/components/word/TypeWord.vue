@@ -22,7 +22,6 @@ import { usePlayWordAudio } from '@/core/hooks/sound.ts'
 import { useInjectedDisplayPolicy } from '@/core/composables/practice-words/usePracticeDisplayPolicy.ts'
 import { EventKey, useEvents } from '@/core/utils/eventBus.ts'
 import { computed, ref, watch } from 'vue'
-import WordLookupPopover from '@/components/word/WordLookupPopover.vue'
 import { BaseButton, BaseIcon, Textarea, Toast, ToastComponent, Tooltip, VolumeIcon } from '@/base'
 import { useI18n } from 'vue-i18n'
 import { useWordOptions } from '@/core/hooks/dict.ts'
@@ -465,7 +464,6 @@ useEvents([
         @wrong="emit('wrong')"
       />
     </div>
-    <WordLookupPopover />
   </div>
 </template>
 
